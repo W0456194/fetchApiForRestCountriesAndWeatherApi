@@ -1,0 +1,21 @@
+fetch data form rest countries for all
+populate data through bootstrap cards with selected variable data
+on button click of any displayed card will initiate weather fetch api
+will direct to a new page with weather details of the asked country on a bootstrap card
+exit button will direct back to all restcountries page
+async function getUserAsync(name) {
+  try{
+    let response = await fetch(`https://api.github.com/users/${name}`);
+    return await response.json();
+  }catch(err){
+    console.error(err);
+    // Handle errors here
+  }
+}
+Anish Agarwal16:59
+avengers.forEach((item, index)=>{
+	console.log(index, item)
+})
+Ankit Upadhyay17:18
+let div = document.createElement("div")
+        div.innerHTML = `<div class="card" style="width: 18rem;"id=>
